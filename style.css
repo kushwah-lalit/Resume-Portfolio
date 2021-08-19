@@ -1,0 +1,627 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+html{
+    font-size:20px;
+}
+@media screen and (max-width:768px){
+    html{
+        font-size:17px;
+    }
+}
+@media screen and (max-width:572px){
+    html{
+        font-size:13px;
+    }
+}
+
+/* Body Header */
+
+#body-header {
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+
+/* Horizontal Lists */
+
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+.vertical-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.vertical-list li {
+    display: block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+.vertical-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+
+.text-center {
+    text-align: center;
+}
+#dropdown{
+    display:none;
+    position:relative;
+    margin-top:1%;
+    margin-left:68%;
+    width:30%;
+    height:0%;
+    margin-right:2%;
+}
+#listicon{
+    display:block;
+    position:relative;
+    text-align:right;
+    color:white;
+    padding:0.2rem;
+    font-size:3rem;
+ }
+#DDlist{
+    display:none;
+    position: absolute;
+    right:0px;
+    background-color:#9a9d8c;
+    padding:0.3em;
+    letter-spacing:0.08rem;
+    line-height:1.2rem;
+    padding-left:1rem;
+    box-shadow: 1px 1px 10px 0.01rem #9a9d8c;
+    transition: all 2s ease-in-out;
+}
+
+
+@media screen and (max-width:572px){
+    #navlist{
+        display:none;
+    }
+    #dropdown{
+        display:block;
+    }
+    
+}
+#dropdown:hover #DDlist{
+    display:block;
+}
+
+/* Name and Social Icons*/
+
+#name-social-container {
+    margin-top: 20vh;
+}
+
+#my-name {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+
+.social-icons li a i {
+    /*color: red;*/
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+@media screen and (max-width:768px){
+    #body-header {
+        height:50vh;
+    }
+    #name-social-container {
+      margin-top: 15vh;
+    }
+/* not changing the nav font as will get ajusted as rem used we changed the html fontisze      */
+}
+@media screen and (max-width:572px){
+    #body-header {
+        height:40vh;
+    }
+    #name-social-container {
+      margin-top: 10vh;
+    }
+/* not changing the nav font as will get ajusted as rem used we changed the html fontisze      */
+}
+
+/*About Section*/
+
+#about {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#my-image {
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -9vh;
+}
+
+#my-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgrey;
+}
+
+
+#about-para {
+    padding: 10px;
+    width: 70%;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-size: 1.1rem;
+    margin: auto;
+}
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+}
+@media screen and (max-width:768px){
+    #my-image {
+        height: 10rem;
+        width: 10rem;
+        margin-top: -8vh;
+    }
+/* not changing the nav font as will get ajusted as rem used we changed the html fontisze      */
+}
+@media screen and (max-width:572px){
+   #my-image {
+        height: 10rem;
+        width: 10rem;
+        margin-top: -8vh;
+    }
+/* not changing the nav font as will get ajusted as rem used we changed the html fontisze      */
+}
+/* section colors */
+/* .sectioneven:nth-child(2n){
+    Background-color:#efefef; 
+}
+.sectionodd:nth-child(2n+1){
+    Background-color:white; 
+} */
+
+/* skills */
+#skills{
+    Background-color:#efefef; 
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.heading{
+    width:auto;
+    padding:10px;
+    font-weight:400;
+    margin-bottom:60px;
+    
+}
+.heading span{
+    display:inline-block;
+    color:#2857a4;
+    font-size:40px;
+}
+.heading span i{
+    display:inline-block;
+    padding-top:10px;
+    margin-right:0.5rem;
+}
+/* list */
+.list-skill{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    width:75%;
+    height:auto;
+    justify-content: space-around;
+}
+.box{
+    width: 12rem;
+    height: 1.9rem;
+    background-color: lightgrey;
+    border-radius: 0.8rem;
+    box-shadow: 1px 1px 10px 0.01rem grey inset;
+    margin: 0px 30px 50px 30px;
+}
+.filler{
+    
+    height: inherit;
+    border-radius: 0.8rem 0px 0px 0.8rem;
+    box-shadow: 10px 0 10px -5px #888;
+}
+.name{
+    padding:3px;
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+#a{
+    width: 50%;
+   background-color: #2857a4; 
+}
+#b{
+    width: 85%;
+   background-color: #ec4e1c;
+}
+#c{
+    width: 80%;
+    background-color: #93738c;
+}
+#d{
+    width: 60%;
+    background-color: #178479;
+}
+#e{
+    width: 50%;
+    background-color: #2857a4;
+}
+#f{
+    width: 80%;
+    background-color: #93738c;
+}
+/* portfolio */
+#portfolio{
+    Background-color:white; 
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.container{
+    max-width: 300px;
+    overflow: hidden;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+.container img{
+    width:100%;
+    height:100%;
+}
+.container:hover{
+    box-shadow: 0 0 20px #74ADC8;
+}
+.portfolio-details{
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+}
+.container:hover .portfolio-details{
+      background-color: #80808078;
+      color: white;
+}
+/* contact */
+#contact{
+    Background-image:linear-gradient(to top right,#2d5099,#403166); 
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center; 
+}
+.heading1{
+    width:auto;
+    padding:10px;
+    font-weight:400;
+    margin-bottom:30px;
+    
+}
+.heading1 span{
+    display:inline-block;
+    color:white;
+    font-size:40px;
+}
+.heading1 span i{
+    display:inline-block;
+    padding-top:10px;
+    margin-right:0.5rem;
+}
+.Dibba{
+    width:45%;
+    overflow: hidden;
+    display:flex;
+    flex-direction:column;
+/*     align-items:center; */
+    justify-content:center;
+    height:auto;
+    margin-bottom:20px;
+}
+
+input,
+textarea {
+    margin-bottom: 30px;
+    padding: 4px 10px;
+    background-color:Transparent ;
+    border: none;
+    border-bottom:1px solid white;
+    color: #686868;
+    display: block;
+    line-height: 1.6;
+    font-size: 1.05rem;
+    color: #000000;
+    display:block;
+    width:100%;
+}
+button[type="submit"] {
+    background-color:transparent;
+    font-size: 0.9rem;
+    border:1px solid white;
+    color: #fff;
+    letter-spacing: 0.1rem;
+    line-height: 1;
+    padding: 12px 18px;
+    width:45%;
+    margin-left:27.5%;
+}
+.headinglist{
+    width:auto;
+
+    font-weight:400;
+
+}
+.headinglist span{
+    display:inline-block;
+    color:lightgrey;
+    font-size:1rem;
+}
+.headinglist span i{
+    display:inline-block;
+    padding-top:10px;
+    margin-right:0.5rem;
+    color:white;
+}
+.headingsub{
+    width:auto;
+ 
+    font-weight:400;
+    
+}
+.headingsub span{
+    display:inline-block;
+    color:white;
+    font-size:1.4rem;
+}
+#text{
+    
+    width:100%;
+    text-align:left;
+    color:lightgrey;
+    line-height: 28px;
+    font-size: 1rem;
+}
+h2,h3{
+    padding:0px;
+    margin:0px;
+}
+#last{
+    margin-top:20px;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+@media screen and (max-width:768px){
+    .Dibba{
+        width:90%;
+    }
+    button[type="submit"] {
+        width:60%;
+        margin-left:20%;
+    }
+    
+}
+/*  experience*/
+.timeline {
+    position: relative;
+    width: 75%;
+    
+
+}
+
+.timeline-box {
+    position: relative;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+   
+    padding:10px;
+}
+
+.timeline-box:nth-child(2n+1) {
+    left: 53%;
+}
+.timeline-box:nth-child(2n+1)::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: lightgrey;
+    top: 28%;
+    border-radius: 50%;
+    left:-9%;
+    z-index:1;
+    
+}
+.timeline-box:nth-child(2n)::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: lightgrey;
+    top: 28%;
+    border-radius: 50%;
+    right:-9.5%;
+    z-index:1;
+}
+#experience{
+    Background-color:white; 
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.divider{
+    position:absolute;
+    width:0;
+    height:75%;
+    right:50%;
+    top:7%;
+    border:2px dashed #c1e4fd;
+  
+}
+#line i{
+    transform: rotate(90deg);
+    display:inline-block;
+    color:#2857a4;
+    font-size:1.8rem;
+    padding-top:10px;
+    margin-left:-0.68rem;
+    margin-top:12px;
+   
+}
+
+.divider #line{
+     position: sticky;
+     top:25%;
+     z-index:5;
+}
+#topline{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+#imgc{
+    width:25%;
+}
+#imgc img{
+    padding:10px;
+    max-width:50px;
+    max-height:50px;
+}
+.head{
+    width:75%;
+}
+#x{
+    font-size:1.4rem;
+    color:#2957a4;
+    margin-bottom:0.5rem;
+    text-align:right;
+}
+#y{
+    font-size:1.2rem;
+    color:#ec4f1c;
+    margin-bottom:.3rem;
+      text-align:right;
+}
+#z{
+    font-size:1rem;
+    color:grey;
+      text-align:right;
+}
+.ExpWork{
+    font-size:0.9rem;
+    color:grey;
+    letter-spacing:1px;
+    text-align:justify;
+    margin-top:0.6rem;
+}
+#education{
+    Background-color:#efefef; 
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+@media screen and (max-width:768px){
+    .timeline {
+      width: 80%;
+    }
+    .timeline-box {
+        left:10% !important;
+        width:90%;
+    }
+    .divider{
+        left:5%;
+    }
+    .timeline-box::after {
+        left:-7% !important;
+    }
+    
+}
+@media screen and (max-width:572px){
+    .timeline {
+      width: 90%;
+    }
+    .timeline-box {
+        left:8% !important;
+        width:92%;
+    }
+    .divider{
+        left:4%;
+    }
+    .timeline-box::after {
+        left:-5% !important;
+    }
+    
+}
+
